@@ -68,11 +68,15 @@ namespace EOPDTiPKP
             if (table.Rows.Count > 0)
             {
                 //При нахождении совпадения
-                MessageBox.Show("Совпадение найдено");
                 dataGridView1.DataSource = table;
-                DB.FirstName = dataGridView1[0, 0].Value.ToString();
-                labelLogin.Text = DB.FirstName;
-
+                DB.IDUser = dataGridView1[0, 0].Value.ToString();
+                DB.FirstName = dataGridView1[1, 0].Value.ToString();
+                DB.LastName = dataGridView1[2, 0].Value.ToString();
+                DB.MiddleName = dataGridView1[3, 0].Value.ToString();
+                this.Hide();
+                MenuForm MF = new MenuForm();
+                MF.ShowDialog();
+                Application.Exit();
             }
             else
             {
@@ -88,7 +92,9 @@ namespace EOPDTiPKP
         {
             //Показ формы с информацией
             InformationForm I_Form = new InformationForm();
-            I_Form.Show();
+            this.TopMost = false;
+            I_Form.ShowDialog();
+            this.TopMost = true;
         }
 
         private void ProblemLogin_Click(object sender, EventArgs e)

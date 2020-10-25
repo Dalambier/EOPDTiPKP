@@ -47,7 +47,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AvailableQuaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvailableQuaForm.Designer.cs">
+      <DependentUpon>AvailableQuaForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DB.cs" />
+    <Compile Include="eopdtipkpDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>eopdtipkpDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HelperForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelperForm.Designer.cs">
+      <DependentUpon>HelperForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="InformationForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +77,12 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm.Designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProblemForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,11 +91,32 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuaSendForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuaSendForm.Designer.cs">
+      <DependentUpon>QuaSendForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestingViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestingViewForm.Designer.cs">
+      <DependentUpon>TestingViewForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AvailableQuaForm.resx">
+      <DependentUpon>AvailableQuaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelperForm.resx">
+      <DependentUpon>HelperForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InformationForm.resx">
       <DependentUpon>InformationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProblemForm.resx">
       <DependentUpon>ProblemForm.cs</DependentUpon>
@@ -86,6 +130,23 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="QuaSendForm.resx">
+      <DependentUpon>QuaSendForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestingViewForm.resx">
+      <DependentUpon>TestingViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="eopdtipkpDataSet.xsc">
+      <DependentUpon>eopdtipkpDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="eopdtipkpDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>eopdtipkpDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="eopdtipkpDataSet.xss">
+      <DependentUpon>eopdtipkpDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -7,7 +7,6 @@ C:\Users\dalam\source\repos\EOPDTiPKP\obj\Debug\EOPDTiPKP.csproj.CoreCompileInpu
 C:\Users\dalam\source\repos\EOPDTiPKP\obj\Debug\EOPDTiPKP.exe
 C:\Users\dalam\source\repos\EOPDTiPKP\obj\Debug\EOPDTiPKP.pdb
 C:\Users\dalam\source\repos\EOPDTiPKP\obj\Debug\EOPDTiPKP.LoginForm.resources
-C:\Users\dalam\source\repos\EOPDTiPKP\obj\Debug\EOPDTiPKP.csprojAssemblyReference.cache
 C:\Users\dalam\source\repos\EOPDTiPKP\bin\Debug\MySql.Data.dll
 C:\Users\dalam\source\repos\EOPDTiPKP\bin\Debug\Google.Protobuf.dll
 C:\Users\dalam\source\repos\EOPDTiPKP\bin\Debug\Zstandard.Net.dll
@@ -25,3 +24,9 @@ C:\Users\dalam\source\repos\EOPDTiPKP\obj\Debug\EOPDTiPKP.exe.config
 C:\Users\dalam\source\repos\EOPDTiPKP\obj\Debug\EOPDTiPKP.csproj.CopyComplete
 C:\Users\dalam\source\repos\EOPDTiPKP\obj\Debug\EOPDTiPKP.InformationForm.resources
 C:\Users\dalam\source\repos\EOPDTiPKP\obj\Debug\EOPDTiPKP.ProblemForm.resources
+C:\Users\dalam\source\repos\EOPDTiPKP\obj\Debug\EOPDTiPKP.MenuForm.resources
+C:\Users\dalam\source\repos\EOPDTiPKP\obj\Debug\EOPDTiPKP.csprojAssemblyReference.cache
+C:\Users\dalam\source\repos\EOPDTiPKP\obj\Debug\EOPDTiPKP.HelperForm.resources
+C:\Users\dalam\source\repos\EOPDTiPKP\obj\Debug\EOPDTiPKP.AvailableQuaForm.resources
+C:\Users\dalam\source\repos\EOPDTiPKP\obj\Debug\EOPDTiPKP.QuaSendForm.resources
+C:\Users\dalam\source\repos\EOPDTiPKP\obj\Debug\EOPDTiPKP.TestingViewForm.resources

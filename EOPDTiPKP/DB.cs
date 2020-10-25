@@ -9,6 +9,7 @@ namespace EOPDTiPKP
 {
     class DB
     {
+        //Подключение к базе данных
         MySqlConnection Connection = new MySqlConnection("server=localhost;port=3306;username=root;password=admin;database=eopdtipkp");
         public void OpenConnection()
         {
@@ -24,7 +25,7 @@ namespace EOPDTiPKP
         {
             return Connection;
         }
-        public static string FirstName, LastName, MiddleName;
-        public static int IDUser;
+        //Сохраняемые данные о пользователе
+        public static string FirstName, LastName, MiddleName = "", IDUser;
     }
 }
