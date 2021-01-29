@@ -1,6 +1,7 @@
-﻿namespace EOPDTiPKP
+﻿
+namespace EOPDTiPKP
 {
-    partial class AvailableQuaForm
+    partial class ResultTesting
     {
         /// <summary>
         /// Required designer variable.
@@ -28,60 +29,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AvailableQuaForm));
-            this.eopdtipkpDataSet = new EOPDTiPKP.eopdtipkpDataSet();
-            this.eopdtipkpDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ResultTesting));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.eopdtipkpDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eopdtipkpDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // eopdtipkpDataSet
-            // 
-            this.eopdtipkpDataSet.DataSetName = "eopdtipkpDataSet";
-            this.eopdtipkpDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // eopdtipkpDataSetBindingSource
-            // 
-            this.eopdtipkpDataSetBindingSource.DataSource = this.eopdtipkpDataSet;
-            this.eopdtipkpDataSetBindingSource.Position = 0;
-            // 
             // dataGridView1
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(810, 257);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.Size = new System.Drawing.Size(629, 212);
+            this.dataGridView1.TabIndex = 1;
             // 
-            // AvailableQuaForm
+            // ResultTesting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(810, 257);
+            this.ClientSize = new System.Drawing.Size(629, 212);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "AvailableQuaForm";
-            this.Text = "Доступные квалификации";
-            this.Load += new System.EventHandler(this.AvailableQuaForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.eopdtipkpDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eopdtipkpDataSetBindingSource)).EndInit();
+            this.Name = "ResultTesting";
+            this.Text = "Результаты тестирования";
+            this.Load += new System.EventHandler(this.ResultTesting_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.BindingSource eopdtipkpDataSetBindingSource;
-        private eopdtipkpDataSet eopdtipkpDataSet;
+
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

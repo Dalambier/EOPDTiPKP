@@ -34,31 +34,39 @@ namespace EOPDTiPKP
             HelpForm.ShowDialog();
         }
 
-        private void AvailableQua_Button_Click(object sender, EventArgs e)
-        {
-            AvailableQuaForm AvaForm = new AvailableQuaForm();
-            AvaForm.Show();
-        }
-
-        private void SendQua_Button_Click(object sender, EventArgs e)
-        {
-            QuaSendForm QuaSendF = new QuaSendForm();
-            QuaSendF.Show();
-        }
-
-        private void HaveQua_Button_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(
-                "Вы ещё не получили ни одной спецификации!",
-                "Ошибка",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Error);
-        }
-
         private void DateTestingButton_Click(object sender, EventArgs e)
         {
             TestingViewForm TestViewForm = new TestingViewForm();
             TestViewForm.Show();
+        }
+
+        private void Test1_button_Click(object sender, EventArgs e)
+        {
+            Test1.Test1_1 Lest1 = new Test1.Test1_1();
+            Lest1.Show();
+        }
+
+        private void Test_Results_Click(object sender, EventArgs e)
+        {
+            ResultTesting resTst = new ResultTesting();
+            resTst.Show();
+        }
+
+        private void Test2_button_Click(object sender, EventArgs e)
+        {
+            Test2.Test2_1 Lest2 = new Test2.Test2_1();
+            Lest2.Show();
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Recommend rec = new Recommend();
+            rec.Show();
         }
     }
 }

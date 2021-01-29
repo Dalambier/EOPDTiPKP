@@ -92,18 +92,31 @@ namespace EOPDTiPKP
         {
             //Показ формы с информацией
             InformationForm I_Form = new InformationForm();
-            this.TopMost = false;
+            this.Hide();
             I_Form.ShowDialog();
-            this.TopMost = true;
+            this.Show();
         }
 
         private void ProblemLogin_Click(object sender, EventArgs e)
         {
             //Показ формы с решением проблемы
-            this.TopMost = false;
+            this.Hide();
             ProblemForm P_form = new ProblemForm();
             P_form.ShowDialog();
-            this.TopMost = true;
+            this.Show();
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            RegistrationForm reform = new RegistrationForm();
+            reform.ShowDialog();
+            this.Show();
         }
     }
 }

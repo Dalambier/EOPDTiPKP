@@ -38,6 +38,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ProblemLogin = new System.Windows.Forms.Label();
             this.Information = new System.Windows.Forms.Label();
+            this.RegistrationButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,7 +65,7 @@
             this.LoginButton.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.LoginButton.Location = new System.Drawing.Point(72, 219);
             this.LoginButton.Name = "LoginButton";
-            this.LoginButton.Size = new System.Drawing.Size(204, 23);
+            this.LoginButton.Size = new System.Drawing.Size(60, 22);
             this.LoginButton.TabIndex = 2;
             this.LoginButton.Text = "Вход";
             this.LoginButton.UseVisualStyleBackColor = true;
@@ -74,12 +75,12 @@
             // 
             this.NameCompany.AutoSize = true;
             this.NameCompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.NameCompany.Location = new System.Drawing.Point(27, 9);
+            this.NameCompany.Location = new System.Drawing.Point(5, 16);
             this.NameCompany.Name = "NameCompany";
-            this.NameCompany.Size = new System.Drawing.Size(284, 100);
+            this.NameCompany.Size = new System.Drawing.Size(329, 75);
             this.NameCompany.TabIndex = 3;
-            this.NameCompany.Text = "Единый онлайн портал \r\nдля тестирования и \r\nповышения квалификации \r\nпреподавател" +
-    "ей";
+            this.NameCompany.Text = "Единый онлайн портал для \r\nтестирования и повышения \r\nквалификации преподавателей" +
+    "\r\n";
             this.NameCompany.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // labelLogin
@@ -119,7 +120,7 @@
             this.ProblemLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ProblemLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ProblemLogin.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.ProblemLogin.Location = new System.Drawing.Point(103, 250);
+            this.ProblemLogin.Location = new System.Drawing.Point(103, 249);
             this.ProblemLogin.Margin = new System.Windows.Forms.Padding(5);
             this.ProblemLogin.Name = "ProblemLogin";
             this.ProblemLogin.Size = new System.Drawing.Size(143, 16);
@@ -134,7 +135,7 @@
             this.Information.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Information.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Information.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.Information.Location = new System.Drawing.Point(127, 276);
+            this.Information.Location = new System.Drawing.Point(127, 275);
             this.Information.Margin = new System.Windows.Forms.Padding(5);
             this.Information.Name = "Information";
             this.Information.Size = new System.Drawing.Size(93, 16);
@@ -143,11 +144,24 @@
             this.Information.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Information.Click += new System.EventHandler(this.Information_Click);
             // 
+            // RegistrationButton
+            // 
+            this.RegistrationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RegistrationButton.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.RegistrationButton.Location = new System.Drawing.Point(138, 219);
+            this.RegistrationButton.Name = "RegistrationButton";
+            this.RegistrationButton.Size = new System.Drawing.Size(138, 22);
+            this.RegistrationButton.TabIndex = 10;
+            this.RegistrationButton.Text = "Регистрация";
+            this.RegistrationButton.UseVisualStyleBackColor = true;
+            this.RegistrationButton.Click += new System.EventHandler(this.button1_Click);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(334, 301);
+            this.ClientSize = new System.Drawing.Size(334, 302);
+            this.Controls.Add(this.RegistrationButton);
             this.Controls.Add(this.Information);
             this.Controls.Add(this.ProblemLogin);
             this.Controls.Add(this.dataGridView1);
@@ -164,6 +178,7 @@
             this.Name = "LoginForm";
             this.Text = "Окно авторизации";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.LoginForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -181,6 +196,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label ProblemLogin;
         private System.Windows.Forms.Label Information;
+        private System.Windows.Forms.Button RegistrationButton;
     }
 }
 

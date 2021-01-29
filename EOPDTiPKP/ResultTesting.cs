@@ -11,14 +11,14 @@ using MySql.Data.MySqlClient;
 
 namespace EOPDTiPKP
 {
-    public partial class AvailableQuaForm : Form
+    public partial class ResultTesting : Form
     {
-        public AvailableQuaForm()
+        public ResultTesting()
         {
             InitializeComponent();
         }
 
-        private void AvailableQuaForm_Load(object sender, EventArgs e)
+        private void ResultTesting_Load(object sender, EventArgs e)
         {
             //объявление класса DB
             DB db = new DB();
@@ -31,7 +31,8 @@ namespace EOPDTiPKP
             //Объявление адаптера
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             //Выполнение sql команды для поиска совместимых значений
-            MySqlCommand command = new MySqlCommand("SELECT * FROM eopdtipkp.available_qualifications;", db.GetConnection());
+            MySqlCommand command = new MySqlCommand("SELECT NameTesting, Score, TimeResult FROM eopdtipkp.resulttesting WHERE UserID = @idU;", db.GetConnection());
+            command.Parameters.Add("@idU", MySqlDbType.VarChar).Value = DB.IDUser;
             //Выбор выполняемой sql команды
             adapter.SelectCommand = command;
             //Заполнение таблицы

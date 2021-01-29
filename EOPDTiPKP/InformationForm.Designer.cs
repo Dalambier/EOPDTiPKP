@@ -37,12 +37,12 @@
             // 
             this.NameCompany.AutoSize = true;
             this.NameCompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.NameCompany.Location = new System.Drawing.Point(12, 9);
+            this.NameCompany.Location = new System.Drawing.Point(2, 9);
             this.NameCompany.Name = "NameCompany";
-            this.NameCompany.Size = new System.Drawing.Size(284, 100);
+            this.NameCompany.Size = new System.Drawing.Size(329, 75);
             this.NameCompany.TabIndex = 4;
-            this.NameCompany.Text = "Единый онлайн портал \r\nдля тестирования и \r\nповышения квалификации \r\nпреподавател" +
-    "ей";
+            this.NameCompany.Text = "Единый онлайн портал для \r\nтестирования и повышения \r\nквалификации преподавателей" +
+    "\r\n";
             this.NameCompany.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label1
@@ -61,7 +61,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(311, 274);
+            this.ClientSize = new System.Drawing.Size(330, 274);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.NameCompany);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

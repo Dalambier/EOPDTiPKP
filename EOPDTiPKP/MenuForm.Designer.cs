@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuForm));
             this.Help_Button = new System.Windows.Forms.Button();
-            this.NameCompany = new System.Windows.Forms.Label();
             this.NameLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.IDLabel = new System.Windows.Forms.Label();
@@ -42,11 +41,13 @@
             this.StartTesting = new System.Windows.Forms.Button();
             this.DateTestingButton = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.HaveQua_Button = new System.Windows.Forms.Button();
-            this.SendQua_Button = new System.Windows.Forms.Button();
-            this.AvailableQua_Button = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Test_Results = new System.Windows.Forms.Button();
+            this.Test2_button = new System.Windows.Forms.Button();
+            this.Test1_button = new System.Windows.Forms.Button();
             this.Info3 = new System.Windows.Forms.Label();
             this.Exit_Button = new System.Windows.Forms.Button();
+            this.NameCompany = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -55,25 +56,13 @@
             // Help_Button
             // 
             this.Help_Button.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.Help_Button.Location = new System.Drawing.Point(17, 397);
+            this.Help_Button.Location = new System.Drawing.Point(17, 429);
             this.Help_Button.Name = "Help_Button";
             this.Help_Button.Size = new System.Drawing.Size(142, 23);
             this.Help_Button.TabIndex = 1;
             this.Help_Button.Text = "Техническая поддержка";
             this.Help_Button.UseVisualStyleBackColor = true;
             this.Help_Button.Click += new System.EventHandler(this.Help_Button_Click);
-            // 
-            // NameCompany
-            // 
-            this.NameCompany.AutoSize = true;
-            this.NameCompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.NameCompany.Location = new System.Drawing.Point(30, 9);
-            this.NameCompany.Name = "NameCompany";
-            this.NameCompany.Size = new System.Drawing.Size(329, 75);
-            this.NameCompany.TabIndex = 4;
-            this.NameCompany.Text = "Единый онлайн портал для \r\nтестирования и повышения \r\nквалификации преподавателей" +
-    "";
-            this.NameCompany.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // NameLabel
             // 
@@ -93,7 +82,7 @@
             this.panel1.Controls.Add(this.IDLabelText);
             this.panel1.Controls.Add(this.Fio);
             this.panel1.Controls.Add(this.NameLabel);
-            this.panel1.Location = new System.Drawing.Point(12, 143);
+            this.panel1.Location = new System.Drawing.Point(12, 128);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(360, 56);
             this.panel1.TabIndex = 6;
@@ -135,7 +124,7 @@
             // 
             this.Info1.AutoSize = true;
             this.Info1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Info1.Location = new System.Drawing.Point(12, 120);
+            this.Info1.Location = new System.Drawing.Point(12, 105);
             this.Info1.Name = "Info1";
             this.Info1.Size = new System.Drawing.Size(168, 20);
             this.Info1.TabIndex = 6;
@@ -146,11 +135,11 @@
             // 
             this.Info2.AutoSize = true;
             this.Info2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Info2.Location = new System.Drawing.Point(12, 202);
+            this.Info2.Location = new System.Drawing.Point(12, 192);
             this.Info2.Name = "Info2";
-            this.Info2.Size = new System.Drawing.Size(179, 20);
+            this.Info2.Size = new System.Drawing.Size(245, 20);
             this.Info2.TabIndex = 7;
-            this.Info2.Text = "Модуль тестирования";
+            this.Info2.Text = "Модуль личного тестирования";
             this.Info2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panel2
@@ -158,7 +147,7 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.StartTesting);
             this.panel2.Controls.Add(this.DateTestingButton);
-            this.panel2.Location = new System.Drawing.Point(12, 225);
+            this.panel2.Location = new System.Drawing.Point(12, 215);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(360, 57);
             this.panel2.TabIndex = 8;
@@ -189,62 +178,75 @@
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.Controls.Add(this.HaveQua_Button);
-            this.panel3.Controls.Add(this.SendQua_Button);
-            this.panel3.Controls.Add(this.AvailableQua_Button);
-            this.panel3.Location = new System.Drawing.Point(12, 315);
+            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.Test_Results);
+            this.panel3.Controls.Add(this.Test2_button);
+            this.panel3.Controls.Add(this.Test1_button);
+            this.panel3.Location = new System.Drawing.Point(12, 305);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(360, 76);
+            this.panel3.Size = new System.Drawing.Size(360, 118);
             this.panel3.TabIndex = 10;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // HaveQua_Button
+            // button1
             // 
-            this.HaveQua_Button.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.HaveQua_Button.Location = new System.Drawing.Point(3, 38);
-            this.HaveQua_Button.Name = "HaveQua_Button";
-            this.HaveQua_Button.Size = new System.Drawing.Size(350, 23);
-            this.HaveQua_Button.TabIndex = 14;
-            this.HaveQua_Button.Text = "Ознакомиться с полученными квалификациями";
-            this.HaveQua_Button.UseVisualStyleBackColor = true;
-            this.HaveQua_Button.Click += new System.EventHandler(this.HaveQua_Button_Click);
+            this.button1.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.button1.Location = new System.Drawing.Point(21, 84);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(216, 23);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Рекомендуемые материалы";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // SendQua_Button
+            // Test_Results
             // 
-            this.SendQua_Button.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.SendQua_Button.Location = new System.Drawing.Point(245, 9);
-            this.SendQua_Button.Name = "SendQua_Button";
-            this.SendQua_Button.Size = new System.Drawing.Size(108, 23);
-            this.SendQua_Button.TabIndex = 13;
-            this.SendQua_Button.Text = "Подать заявку";
-            this.SendQua_Button.UseVisualStyleBackColor = true;
-            this.SendQua_Button.Click += new System.EventHandler(this.SendQua_Button_Click);
+            this.Test_Results.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.Test_Results.Location = new System.Drawing.Point(244, 84);
+            this.Test_Results.Name = "Test_Results";
+            this.Test_Results.Size = new System.Drawing.Size(95, 23);
+            this.Test_Results.TabIndex = 16;
+            this.Test_Results.Text = "Результаты";
+            this.Test_Results.UseVisualStyleBackColor = true;
+            this.Test_Results.Click += new System.EventHandler(this.Test_Results_Click);
             // 
-            // AvailableQua_Button
+            // Test2_button
             // 
-            this.AvailableQua_Button.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.AvailableQua_Button.Location = new System.Drawing.Point(2, 9);
-            this.AvailableQua_Button.Name = "AvailableQua_Button";
-            this.AvailableQua_Button.Size = new System.Drawing.Size(237, 23);
-            this.AvailableQua_Button.TabIndex = 12;
-            this.AvailableQua_Button.Text = "Просмотреть доступные квалификации";
-            this.AvailableQua_Button.UseVisualStyleBackColor = true;
-            this.AvailableQua_Button.Click += new System.EventHandler(this.AvailableQua_Button_Click);
+            this.Test2_button.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.Test2_button.Location = new System.Drawing.Point(21, 40);
+            this.Test2_button.Name = "Test2_button";
+            this.Test2_button.Size = new System.Drawing.Size(318, 23);
+            this.Test2_button.TabIndex = 15;
+            this.Test2_button.Text = "Навыки работы с программой ZOOM";
+            this.Test2_button.UseVisualStyleBackColor = true;
+            this.Test2_button.Click += new System.EventHandler(this.Test2_button_Click);
+            // 
+            // Test1_button
+            // 
+            this.Test1_button.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.Test1_button.Location = new System.Drawing.Point(21, 9);
+            this.Test1_button.Name = "Test1_button";
+            this.Test1_button.Size = new System.Drawing.Size(318, 23);
+            this.Test1_button.TabIndex = 14;
+            this.Test1_button.Text = "Знание государственных образовательных стандартов";
+            this.Test1_button.UseVisualStyleBackColor = true;
+            this.Test1_button.Click += new System.EventHandler(this.Test1_button_Click);
             // 
             // Info3
             // 
             this.Info3.AutoSize = true;
             this.Info3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Info3.Location = new System.Drawing.Point(12, 292);
+            this.Info3.Location = new System.Drawing.Point(12, 282);
             this.Info3.Name = "Info3";
-            this.Info3.Size = new System.Drawing.Size(276, 20);
+            this.Info3.Size = new System.Drawing.Size(239, 20);
             this.Info3.TabIndex = 9;
-            this.Info3.Text = "Модуль повышения квалификации";
+            this.Info3.Text = "Модуль общего тестирования";
             this.Info3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Exit_Button
             // 
             this.Exit_Button.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.Exit_Button.Location = new System.Drawing.Point(311, 397);
+            this.Exit_Button.Location = new System.Drawing.Point(311, 429);
             this.Exit_Button.Name = "Exit_Button";
             this.Exit_Button.Size = new System.Drawing.Size(56, 23);
             this.Exit_Button.TabIndex = 11;
@@ -252,11 +254,24 @@
             this.Exit_Button.UseVisualStyleBackColor = true;
             this.Exit_Button.Click += new System.EventHandler(this.Exit_Button_Click);
             // 
+            // NameCompany
+            // 
+            this.NameCompany.AutoSize = true;
+            this.NameCompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NameCompany.Location = new System.Drawing.Point(30, 9);
+            this.NameCompany.Name = "NameCompany";
+            this.NameCompany.Size = new System.Drawing.Size(329, 75);
+            this.NameCompany.TabIndex = 12;
+            this.NameCompany.Text = "Единый онлайн портал для \r\nтестирования и повышения \r\nквалификации преподавателей" +
+    "\r\n";
+            this.NameCompany.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // MenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(384, 429);
+            this.ClientSize = new System.Drawing.Size(384, 464);
+            this.Controls.Add(this.NameCompany);
             this.Controls.Add(this.Exit_Button);
             this.Controls.Add(this.Help_Button);
             this.Controls.Add(this.panel3);
@@ -265,7 +280,6 @@
             this.Controls.Add(this.Info2);
             this.Controls.Add(this.Info1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.NameCompany);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -284,7 +298,6 @@
 
         #endregion
         private System.Windows.Forms.Button Help_Button;
-        private System.Windows.Forms.Label NameCompany;
         private System.Windows.Forms.Label NameLabel;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label Info1;
@@ -296,10 +309,12 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label Info3;
         private System.Windows.Forms.Button Exit_Button;
-        private System.Windows.Forms.Button HaveQua_Button;
-        private System.Windows.Forms.Button SendQua_Button;
-        private System.Windows.Forms.Button AvailableQua_Button;
         private System.Windows.Forms.Button StartTesting;
         private System.Windows.Forms.Button DateTestingButton;
+        private System.Windows.Forms.Button Test_Results;
+        private System.Windows.Forms.Button Test2_button;
+        private System.Windows.Forms.Button Test1_button;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label NameCompany;
     }
 }
